@@ -57,7 +57,7 @@ end
     new_song.name = x.strip.split('.')[0]
     new_song.artist_name = y.strip
     self.create_by_name(new_song.name)
-    new_song << @@all
+    @@all << new_song
     new_song
 end
 
